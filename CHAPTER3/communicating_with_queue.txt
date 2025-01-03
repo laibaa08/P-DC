@@ -1,0 +1,16 @@
+This code addresses the Producer-Consumer Problem using Python's `multiprocessing` module.
+
+### Producer Class
+- Generates 10 random integers within the range of 0 to 256 and adds them to a shared queue.
+- Prints each item added along with the current size of the queue, simulating a delay of one second with `time.sleep(1)`.
+
+### Consumer Class
+- Continuously retrieves items from the queue until it is empty.
+- Prints each item removed and pauses briefly for processing.
+
+### Main Process
+- Creates and initiates both Producer and Consumer processes.
+- Waits for both processes to finish using the `join()` method.
+
+### Output
+The producer adds items to the queue while the consumer removes them, demonstrating inter-process communication through the shared queue.

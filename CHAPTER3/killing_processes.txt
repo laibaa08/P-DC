@@ -1,0 +1,17 @@
+This code showcases process lifecycle management using Python's `multiprocessing` module, focusing on starting, terminating, and joining a process.
+
+### Functionality
+It illustrates the stages of a process's lifecycle: start, terminate, and join.
+
+### Process Lifecycle
+- **Before Execution**: The process is created, and `is_alive()` returns `False`.
+- **Start**: The process begins execution, changing `is_alive()` to `True`.
+- **Terminate**: The process is forcibly stopped, resulting in `is_alive()` returning `False` again.
+- **Join**: This step ensures that the process is properly cleaned up before the program continues.
+
+### Exit Code
+- **None**: Indicates that the process has not yet exited.
+- **-15**: Indicates that the process was terminated.
+
+### Output
+The output confirms the state of the process at each stage. Only a portion of the `foo` function executes before the process is terminated.

@@ -1,0 +1,17 @@
+### Function `function_square`
+- Takes an input value and returns its square.
+
+### Process Pool
+- A `multiprocessing.Pool` is created with 4 worker processes.
+- The `pool.map(function_square, inputs)` method applies the `function_square` function to each element in the `inputs` list, returning the results in a new list.
+
+### Process Pool Management
+- **`pool.close()`**: Closes the pool to prevent any further tasks from being added.
+- **`pool.join()`**: Waits for all worker processes to complete their tasks.
+
+### Inputs and Outputs
+- The `inputs` list contains numbers from 0 to 99.
+- The squares of these numbers are calculated and stored as `pool_outputs`.
+
+### Output
+The program outputs the squares of numbers from 0 to 99, computed by 4 parallel processes.

@@ -1,0 +1,13 @@
+The Python function myFunc performs a straightforward operation, printing messages based on the input parameter i. Here's a summary:
+
+Function Details:
+Input Parameter:
+
+i (integer): Specifies the process identifier (used in messages) and the range of numbers to iterate through.
+Function Behavior:
+
+Displays the process number with the message: "calling myFunc from process n°: %s" % i.
+Iterates through numbers from 0 to i-1 and prints: "output from myFunc is :%s" % j.
+Return Value:
+
+The function does not explicitly return any value. The return statement is optional and may be omitted.
